@@ -143,7 +143,6 @@ export const getCategories = async () => {
 };
 
 export const submitComment = async (obj) => {
-  console.log("!!!", process.env.NEXT_PUBLIC_GRAPHCMS_TOKEN);
   const graphQLClient = new GraphQLClient(graphqlAPI, {
     headers: {
       authorization: `Bearer ${process.env.NEXT_PUBLIC_GRAPHCMS_TOKEN}`,
