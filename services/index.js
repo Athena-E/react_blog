@@ -145,7 +145,7 @@ export const getCategories = async () => {
 export const submitComment = async (obj) => {
   const graphQLClient = new GraphQLClient(graphqlAPI, {
     headers: {
-      authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
+      authorization: `Bearer ${process.env.NEXT_PUBLIC_GRAPHCMS_TOKEN}`,
     },
   });
 

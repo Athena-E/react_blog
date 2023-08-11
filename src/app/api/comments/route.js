@@ -1,7 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
-const graphcmsToken = process.env.GRAPHCMS_TOKEN;
+const graphcmsToken = process.env.NEXT_PUBLIC_GRAPHCMS_TOKEN;
 
 export async function POST(req, res) {
   const graphQLClient = new GraphQLClient(graphqlAPI, {
