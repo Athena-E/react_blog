@@ -1,7 +1,11 @@
 import React from "react";
+import Home from "./homePage";
+import { getPosts } from "../../services";
+import { headers } from "next/dist/client/components/headers";
 
-const page = () => {
-  return <div>page</div>;
-};
+export default async function page() {
+  const headersList = headers();
+  const posts = await getPosts();
 
-export default page;
+  return <Home posts={posts} />;
+}
