@@ -1,9 +1,7 @@
 import React from "react";
-import Home from "./home/homePage";
-import { getPosts } from "../../services";
 
-export default async function page() {
-  const posts = await getPosts();
+const page = () => {
+  return <div>page</div>;
+};
 
-  return <Home posts={posts} />;
-}
+export default page;

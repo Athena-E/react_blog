@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getPosts, getPostDetails } from "../../../../services";
+import { getPostDetails } from "../../../../services";
 
 import PostPage from "./postPage";
 
